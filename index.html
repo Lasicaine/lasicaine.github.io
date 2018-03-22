@@ -1,219 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
     <title>Alex Antomonov Personal Portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <style>
-        @import 'https://fonts.googleapis.com/css?family=Ubuntu';
-        body {
-            font-family: 'Ubuntu', sans-serif;
-            background: #D3D3D3;
-        }
-        
-        .part-header {
-            color: #FFFFFF;
-            background: #003153;
-        }
-        
-        a,
-        a:hover,
-        a:focus,
-        a:visited {
-            text-decoration: none;
-        }
-        
-        .img-thumb {
-            width: 726px;
-            height: 600px;
-            border: 1px solid;
-            border-color: #D3D3D3;
-        }
-        
-        .icons {
-            width: 200px;
-            height: 200px;
-        }
-        
-        .min-size {
-            min-width: 450px;
-        }
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(function() {
-            var $htmlBody = $('html, body');
-            var $body = $("body");
 
-            function paddingTop() {
-                var hightNav = $("nav").height();
-                var headerMarginTop = 40;
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-                $body.css("padding-top", (hightNav - headerMarginTop) + "px");
+    <!-- Custom styles for this template -->
+    <link href="styles/customstyle.css" rel="stylesheet">
+    <link href="styles/album.css" rel="stylesheet">
+  </head>
 
-            };
+  <body>
 
-            paddingTop();
-
-            $(window).resize(paddingTop);
-
-            $("[data-class-notlink]").click(function(event) {
-
-                $("nav li").removeClass('active');
-                $("ul li:first").addClass('active');
-
-            });
-
-            $("nav a").click(function(event) {
-                var $this = $(this);
-                event.preventDefault();
-                $("nav li").removeClass('active');
-
-                if (!$this.hasClass('navbar-brand')) {
-                    $this.parent().addClass('active');
-                } else {
-                    $("ul li:first").addClass('active');
-                };
-
-                var navLink = $this.attr("href");
-                var hightNav = $("nav").height();
-
-                $htmlBody.animate({
-                    scrollTop: $(navLink).offset().top - hightNav
-                }, 2000);
-            });
-
-            $(window).scroll(function(event) {
-                var $window = $(window);
-                var scrolling = $window.scrollTop();
-
-                if (scrolling == $(document).height() - $window.height()) {
-                    $("nav li").removeClass('active');
-                    $("ul li:last").addClass('active');
-                } else {
-                    if (scrolling === 0) {
-                        $("nav li").removeClass('active');
-                        $("ul li:first").addClass('active');
-                    } else {
-                        $("nav li").removeClass('active');
-                        $("i.glyphicon-user").closest('li').addClass('active');
-                    }
-                };
-            });
-
-        });
-    </script>
-</head>
-
-<body>
-    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#articleAbout">Alex Antomonov</a>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">Motto</h4>
+              <blockquote class="txt blockquote">
+                    <p class="mb-0"><em>"To strive, to seek, to find, and not to yield"</em></p>
+                    <p class="blockquote-footer txt">Alfred, Lord Tennyson <cite title="Source Title">"Ulysses"</cite></p>
+              </blockquote>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#articleAbout"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;About</a></li>
-                <li><a href="#articlePortfolio"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;Portfolio</a></li>
-                <li><a href="#articleContact"><i class="glglyphicon glyphicon-envelope"></i>&nbsp;&nbsp;Contact</a></li>
-            </ul>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="https://play.google.com/store/apps/developer?id=Alex+Antomonov" target="_blank" class="txt">Get App on Google Play</a></li>
+                <li><a href="https://github.com/Suomaa" target="_blank" class="txt">Follow on GitHub</a></li>
+                <li><a href="https://codepen.io/Suomaa" target="_blank" class="txt">Follow on CodePen</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </nav>
-    <div class="container-fluid min-size">
-        <article id="articleAbout">
-            <div class="row part-header page-header text-center">
-                <div class="col-xs-12">
-                    <h1>About Me</h1>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-xs-8">
-                    <h1>Junior Android Developer, with practical experience in Information Security and Software Testing.</h1>
-                    <h1>;)</h1>
-                    <h3>You can follow me on <a href="https://play.google.com/store/apps/developer?id=Alex+Antomonov" target="_blank">Google Play</a>, <a href="https://github.com/Suomaa" target="_blank">GitHub</a> or <a href="https://codepen.io/Suomaa" target="_blank">CodePen</a>.</h3>
-                </div>
-                <div class="col-xs-4">
-                    <img class="img-responsive img-thumbnail" src="https://avatars2.githubusercontent.com/u/20427181?v=3&s=400" alt="Suomaa Avatar">
-                </div>
-            </div>
-        </article>
-        <article id="articlePortfolio">
-            <div class="row part-header page-header text-center">
-                <div class="col-xs-12">
-                    <h1>Portfolio</h1>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="https://lh3.googleusercontent.com/QChc9peRU97puw1feOlWeTgWlnxEOI4g2n9YQe-GUJggA2-lOjFmLwqLB2envrKZgU7u=s180" alt="Icon for the AFlashlight app">
-                        <div class="caption">
-                            <h3>AFlashlight</h3>
-                            <p>AFlashlight it is an application with which you can use your device as a flashlight.</p>
-                            <p><a href="https://play.google.com/store/apps/details?id=fi.suomaafrontieroy.aflashlight" target="_blank" class="btn btn-primary" role="button"><i class="glyphicon glyphicon-hand-right"></i>&nbsp;&nbsp;Link</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="https://lh3.googleusercontent.com/Z3JiFmT-aEj7n3_Es2RDrNu_eph9aT59MNBoTq0hLZbcjLI9k2pBoClENe995OneVdo=s180" alt="Icon for the Counter app">
-                        <div class="caption">
-                            <h3>Counter</h3>
-                            <p>Simple counter for Android.</p>
-                            <p><a href="https://play.google.com/store/apps/details?id=fi.suomaafrontieroy.counter" target="_blank" class="btn btn-primary" role="button"><i class="glyphicon glyphicon-hand-right"></i>&nbsp;&nbsp;Link</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="https://lh3.googleusercontent.com/mkQ-2AGkuaZzxiTR4cmahX1Ebn5A18C-ml5aO4JukpuiellpKbBmyRg1qverFLsE_xI=s180" alt="Icon for the Fortune Ball app">
-                        <div class="caption">
-                            <h3>Fortune Ball</h3>
-                            <p>The Fortune Ball is an app for fortune-telling or seeking advice.</p>
-                            <p><a href="https://play.google.com/store/apps/details?id=fi.suomaafrontieroy.fortuneball" target="_blank" class="btn btn-primary" role="button"><i class="glyphicon glyphicon-hand-right"></i>&nbsp;&nbsp;Link</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <article id="articleContact">
-            <div class="row part-header page-header text-center">
-                <div class="col-xs-12">
-                    <h1>Contact</h1>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-xs-4">
-                    <a href="https://play.google.com/store/apps/developer?id=Alex+Antomonov" target="_blank"><img class="icons" src="https://s17.postimg.org/omy5towkf/Google_Play_black_180.png" alt="Google Play icons"></a>
-                </div>
-                <div class="col-xs-4">
-                    <a href="https://codepen.io/Suomaa" target="_blank"><img class="icons" src="https://s12.postimg.org/4nhy2fdd9/github.png" alt="GitHub icons"></a>
-                </div>
-                <div class="col-xs-4">
-                    <a href="https://github.com/Suomaa" target="_blank"><img class="icons" src="https://s11.postimg.org/di0jybonn/codepen.png" alt="CodePen icons"></a>
-                </div>
-            </div>
-            <div class="row text-center">
-                    <div class="col-xs-4">
-                            <h2><a href="https://play.google.com/store/apps/developer?id=Alex+Antomonov" target="_blank"><i class="glyphicon glyphicon-share-alt"></i>&nbsp;Google Play</a></h2>
-                        </div>
-                <div class="col-xs-4">
-                    <h2><a href="https://github.com/Suomaa" target="_blank"><i class="glyphicon glyphicon-share-alt"></i>&nbsp;GitHub</a></h2>
-                </div>
-                <div class="col-xs-4">
-                        <h2><a href="https://codepen.io/Suomaa" target="_blank"><i class="glyphicon glyphicon-share-alt"></i>&nbsp;CodePen</a></h2>
-                </div>
-            </div>
-        </article>
-        <hr>
-        <div class="row">
-            <div class="col-xs-12">
-                <footer class="text-center">
-                    <h5 class="text-muted">Personal Portfolio Webpage created by <span class="glyphicon glyphicon-copyright-mark"></span>&nbsp;<a href="https://www.freecodecamp.com/suomaa" target="_blank">Alex Antomonov</a>.</h5>
-                </footer>
-            </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <img class="img-icon" src="image/icon.png" alt="Icon for avatar">
+            <strong>Alex Antomonov</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-    </div>
-</body>
+      </div>
+    </header>
 
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading txt-header">Hey there! My name is Alex.</h1>
+          <p class="lead txt-header text-muted">I'm Junior Android Developer with practical experience in Information Security and Software Testing.</p>
+          <p class="lead txt-header text-muted">In my spare time I turn different interesting ideas into beautiful Android applications. ;)</p>
+          <p>
+            <a href="https://play.google.com/store/apps/developer?id=Alex+Antomonov" target="_blank" class="btn btn-success my-2">Get it on Google Play</a>
+            <a href="https://github.com/Suomaa" target="_blank" class="btn btn-info my-2">Follow Me on GitHub</a>
+          </p>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top img-thumb" src="https://lh3.googleusercontent.com/QChc9peRU97puw1feOlWeTgWlnxEOI4g2n9YQe-GUJggA2-lOjFmLwqLB2envrKZgU7u=s180" alt="Icon for the AFlashlight app">
+                <div class="card-body">
+                    <h5 class="card-title card-title-center-align txt-header">AFlashlight</h5>
+                    <p class="card-text">AFlashlight it is an application with which you can use your device as a flashlight.</p>
+                    <a href="https://play.google.com/store/apps/details?id=fi.suomaafrontieroy.aflashlight" target="_blank" class="btn btn-outline-success btn-block">Get it on Google Play</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                      <img class="card-img-top img-thumb" src="https://lh3.googleusercontent.com/Z3JiFmT-aEj7n3_Es2RDrNu_eph9aT59MNBoTq0hLZbcjLI9k2pBoClENe995OneVdo=s180" alt="Icon for the Counter app">
+                      <div class="card-body">
+                          <h5 class="card-title card-title-center-align txt-header">Counter</h5>
+                          <p class="card-text">The simple counter application for Android.</p>
+                          <a href="https://play.google.com/store/apps/details?id=fi.suomaafrontieroy.counter" target="_blank" class="btn btn-outline-success btn-block">Get it on Google Play</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                          <img class="card-img-top img-thumb" src="https://lh3.googleusercontent.com/mkQ-2AGkuaZzxiTR4cmahX1Ebn5A18C-ml5aO4JukpuiellpKbBmyRg1qverFLsE_xI=s180" alt="Icon for the AFlashlight app">
+                          <div class="card-body">
+                              <h5 class="card-title card-title-center-align txt-header">Fortune Ball</h5>
+                              <p class="card-text">Fortune Ball is an app for fortune-telling or seeking advice.</p>
+                              <a href="https://play.google.com/store/apps/details?id=fi.suomaafrontieroy.fortuneball" target="_blank" class="btn btn-outline-success btn-block">Get it on Google Play</a>
+                          </div>
+                        </div>
+                    </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="text-muted">Personal Portfolio Webpage created with &#10084; by &copy;&nbsp;<a href="https://www.github.com/suomaa" target="_blank">Alex Antomonov</a>.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script/holder.min.js"></script>
+  </body>
 </html>

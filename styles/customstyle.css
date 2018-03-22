@@ -1,0 +1,33 @@
+        @import 'https://fonts.googleapis.com/css?family=Ubuntu';
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            /*background: #D3D3D3;*/
+        }
+        .navbar.bg-dark { 
+            background: indigo!important; 
+        }
+        .img-icon {
+            margin-right: 8px;
+        }
+        .collapse.bg-dark {
+            background: indigo!important; 
+        }
+        .txt {
+            color: #CBBDE2!important; 
+        }
+        .txt-header {
+            color: indigo!important;
+        }
+        .btn-background {
+            background: indigo!important;
+        }
+        .img-thumb {
+            align-self: center;
+        }
+        .card-img-top {
+            padding-top: 16px;
+            width:60%!important;
+        }
+        .card-title-center-align {
+            text-align: center
+        }
