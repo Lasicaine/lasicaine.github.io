@@ -1,33 +1,24 @@
         @import 'https://fonts.googleapis.com/css?family=Ubuntu';
         body {
             font-family: 'Ubuntu', sans-serif;
-            /*background: #D3D3D3;*/
         }
-        .navbar.bg-dark { 
-            background: indigo!important; 
+        .bg-dark { 
+            background: #4B0082!important; 
         }
         .img-icon {
-            margin-right: 8px;
-        }
-        .collapse.bg-dark {
-            background: indigo!important; 
-        }
-        .txt {
-            color: #CBBDE2!important; 
+            margin-right: 12px;
         }
         .txt-header {
-            color: indigo!important;
+            color: #CBBDE2; 
         }
-        .btn-background {
-            background: indigo!important;
+        .txt-about {
+            color: #4B0082;
         }
         .img-thumb {
             align-self: center;
-        }
-        .card-img-top {
             padding-top: 16px;
-            width:60%!important;
+            width:55%;
         }
-        .card-title-center-align {
+        .card-title-align-center {
             text-align: center
         }
