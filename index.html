@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Portfolio, Antomonov, Android software developer">
   <meta name="author" content="Alex Antomonov">
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
@@ -37,16 +37,14 @@
           <div class="col-sm-8 col-md-7 py-4">
             <h4 class="text-white">Motto</h4>
             <blockquote class="txt-header blockquote">
-              <p class="mb-0"><em>"To strive, to seek, to find, and not to yield"</em></p>
-              <p class="blockquote-footer txt-header">Alfred, Lord Tennyson <cite title="Source Title">"Ulysses"</cite>
-              </p>
+              <p class="col"><em>"To strive, to seek, to find, and not to yield"</em></p>
+              <p class="blockquote-footer txt-header">Alfred, Lord Tennyson <cite title="Source Title">"Ulysses"</cite></p>
             </blockquote>
           </div>
           <div class="col-sm-4 offset-md-1 py-4">
             <h4 class="text-white">Contact</h4>
             <ul class="list-unstyled">
-              <li><a href="https://play.google.com/store/apps/dev?id=7956639872568469270" target="_blank"
-                  class="txt-header">Get Apps on Google Play</a></li>
+              <li><a href="https://play.google.com/store/apps/dev?id=7956639872568469270" target="_blank" class="txt-header">Get Apps on Google Play</a></li>
               <li><a href="https://github.com/Lasicaine" target="_blank" class="txt-header">Follow on GitHub</a></li>
               <li><a href="https://codepen.io/Lasicaine" target="_blank" class="txt-header">Follow on CodePen</a></li>
               <li><a href="https://www.linkedin.com/in/leks" target="_blank" class="txt-header">Follow on LinkedIn</a></li>
@@ -55,14 +53,13 @@
         </div>
       </div>
     </div>
-
-    <div class="navbar navbar-dark bg-dark box-shadow">
-      <div class="container d-flex justify-content-between">
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
         <a href="#" class="navbar-brand d-flex align-items-center">
           <img class="img-icon" src="images/icon.png" alt="Icon for avatar">
           <strong>Alex Antomonov</strong>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
           aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -70,213 +67,243 @@
     </div>
   </header>
 
-  <main role="main">
+  <main>
 
-    <section class="jumbotron text-center">
-      <div class="container">
-        <h1 class="jumbotron-heading txt-about">Hey there! My name is Alex.</h1>
-        <p class="lead txt-about">I'm Android Developer with practical experience in Software Testing and Information
-          Security.</p>
-        <p class="lead txt-about">I like turn different interesting ideas into beautiful Android applications. ;)</p>
-        <p>
-          <a href="https://play.google.com/store/apps/dev?id=7956639872568469270" target="_blank"
-            class="btn btn-success my-2">Get Apps on Google Play</a>
-        </p>
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light txt-app-title">Hey there! My name is Alex.</h1>
+          <p class="lead txt-app-title">I'm Android Developer with practical experience in Software Testing and InformationSecurity.</p>
+          <p class="lead txt-app-title">I like turn different interesting ideas into beautiful Android applications. ;)</p>
+          <p>
+            <a href="https://play.google.com/store/apps/dev?id=7956639872568469270" target="_blank"
+              class="btn btn-success my-2">Get Apps on Google Play</a>
+          </p>
+        </div>
       </div>
     </section>
 
     <div class="album py-5 bg-light">
       <div class="container">
 
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="img-thumb" src="images/AppIcons/TuskyIconSquare.png" alt="Icon for Tusky app">
-                <div class="card-body">
-                  <h5 class="card-title card-title-align-center txt-about">Tusky</h5>
-                  <p class="card-text">Tusky is an easy manager for tasks and to-do lists.</p>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="img-thumb" src="images/AppIcons/TuskyIconSquare.png" alt="Icon for Tusky app">
+              <div class="card-body">
+                <h5 class="card-title card-title-align-center txt-app-title">Tusky</h5>
+                <p class="card-text">Tusky is an easy manager for tasks and to-do lists</p>
+                <div class="d-grid gap-2">
                   <a href="https://play.google.com/store/apps/details?id=fi.lasicaine.tusky" target="_blank"
-                    class="btn btn-outline-success btn-block">Get it on Google Play</a>
+                    class="btn btn-outline-success">Get it on Google Play</a>
                 </div>
               </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
+
+          <div class="col">
+            <div class="card shadow-sm">
               <img class="img-thumb" src="images/AppIcons/SkopinBusIconSquare.png" alt="Icon for Skopin Bus app">
               <div class="card-body">
-                <h5 class="card-title card-title-align-center txt-about">Skopin Bus</h5>
-                <p class="card-text">Bus and minibus timetable in Skopin district.</p>
-                <a href="https://play.google.com/store/apps/details?id=rpb.lasicaine.skopinbus" target="_blank"
-                  class="btn btn-outline-success btn-block">Get it on Google Play</a>
+                <h5 class="card-title card-title-align-center txt-app-title">Skopin Bus</h5>
+                <p class="card-text">Bus and minibus timetable in Skopin district</p>
+                <div class="d-grid gap-2">
+                  <a href="https://play.google.com/store/apps/details?id=rpb.lasicaine.skopinbus" target="_blank"
+                    class="btn btn-outline-success">Get it on Google Play</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
+
+          <div class="col">
+            <div class="card shadow-sm">
               <img class="img-thumb" src="images/AppIcons/TurvaLinnaSquare.png" alt="Icon for TurvaLinna app">
               <div class="card-body">
-                <h5 class="card-title card-title-align-center txt-about">TurvaLinna</h5>
-                <p class="card-text">TurvaLinna is a simple paranoid password manager.</p>
-                <a href="https://play.google.com/store/apps/details?id=fi.lasicaine.turvalinna" target="_blank"
-                  class="btn btn-outline-success btn-block">Get it on Google Play</a>
+                <h5 class="card-title card-title-align-center txt-app-title">TurvaLinna</h5>
+                <p class="card-text">TurvaLinna is a simple paranoid password manager</p>
+                <div class="d-grid gap-2">
+                  <a href="https://play.google.com/store/apps/details?id=fi.lasicaine.turvalinna" target="_blank"
+                    class="btn btn-outline-success">Get it on Google Play</a>
+                </div>
               </div>
             </div>
           </div>
 
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
+          <div class="col">
+            <div class="card shadow-sm">
               <img class="img-thumb" src="images/AppIcons/NordicWalkingAdvisorIconSquare.png"
                 alt="Icon for Nordic Walking Advisor app">
               <div class="card-body">
-                <h5 class="card-title card-title-align-center txt-about">Nordic Walking Advisor</h5>
-                <p class="card-text">Handy advisor for selecting a length of Nordic walking poles.</p>
-                <a href="https://play.google.com/store/apps/details?id=fi.lasicaine.nordicwalkingadvisor"
-                  target="_blank" class="btn btn-outline-success btn-block">Get it on Google Play</a>
+                <h5 class="card-title card-title-align-center txt-app-title">Nordic Walking Advisor</h5>
+                <p class="card-text">Handy advisor for selecting a length of Nordic walking poles</p>
+                <div class="d-grid gap-2">
+                  <a href="https://play.google.com/store/apps/details?id=fi.lasicaine.nordicwalkingadvisor"
+                    target="_blank" class="btn btn-outline-success">Get it on Google Play</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img class="img-thumb" src="images/AppIcons/NutritionalValueSquare.png" alt="Icon for Nutritional Value app">
-              <div class="card-body">
-                <h5 class="card-title card-title-align-center txt-about">Nutritional Value</h5>
-                <p class="card-text">App provides access to USDA Food Composition Databases.</p>
-                <a href="https://play.google.com/store/apps/details?id=fi.lasicaine.nutritionvalue" target="_blank"
-                  class="btn btn-outline-success btn-block">Get it on Google Play</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img class="img-thumb" src="images/AppIcons/HolidaysInRussiaIconSquare.png" alt="Icon for Holidays in Russia app">
-              <div class="card-body">
-                <h5 class="card-title card-title-align-center txt-about">Holidays in Russia</h5>
-                <p class="card-text">Calendar of Holidays in Russia (Production calendar) for a five-day working week.</p>
-                <a href="https://play.google.com/store/apps/details?id=fi.suomaafrontier.holidayscalendar"
-                  target="_blank" class="btn btn-outline-success btn-block">Get it on Google Play</a>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="img-thumb" src="images/AppIcons/NutritionalValueSquare.png"
+                alt="Icon for Nutritional Value app">
+              <div class="card-body">
+                <h5 class="card-title card-title-align-center txt-app-title">Nutritional Value</h5>
+                <p class="card-text">App provides access to USDA Food Composition Databases</p>
+                <div class="d-grid gap-2">
+                  <a href="https://play.google.com/store/apps/details?id=fi.lasicaine.nutritionvalue" target="_blank"
+                    class="btn btn-outline-success">Get it on Google Play</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="img-thumb" src="images/AppIcons/HolidaysInRussiaIconSquare.png"
+                alt="Icon for Holidays in Russia app">
+              <div class="card-body">
+                <h5 class="card-title card-title-align-center txt-app-title">Holidays in Russia</h5>
+                <p class="card-text">Calendar of Holidays in Russia (Production calendar) for a five-day working week</p>
+                <div class="d-grid gap-2">
+                  <a href="https://play.google.com/store/apps/details?id=fi.suomaafrontier.holidayscalendar"
+                    target="_blank" class="btn btn-outline-success">Get it on Google Play</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
               <img class="img-thumb" src="images/AppIcons/ACalculatorIconSquare.png" alt="Icon for the ACalculator app">
               <div class="card-body">
-                <h5 class="card-title card-title-align-center txt-about">ACalculator</h5>
-                <p class="card-text">An easy to use calculator for Android with support for counting expressions.</p>
-                <a href="https://play.google.com/store/apps/details?id=rpb.lasicaine.acalculator" target="_blank"
-                  class="btn btn-outline-success btn-block">Get it on Google Play</a>
+                <h5 class="card-title card-title-align-center txt-app-title">ACalculator</h5>
+                <p class="card-text">An easy to use calculator for Android with support for counting expressions</p>
+                <div class="d-grid gap-2">
+                  <a href="https://play.google.com/store/apps/details?id=rpb.lasicaine.acalculator" target="_blank"
+                    class="btn btn-outline-success">Get it on Google Play</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
+
+          <div class="col">
+            <div class="card shadow-sm">
               <img class="img-thumb" src="images/AppIcons/AFlashlightIconSquare.png" alt="Icon for the AFlashlight app">
               <div class="card-body">
-                <h5 class="card-title card-title-align-center txt-about">AFlashlight</h5>
-                <p class="card-text">AFlashlight is an application with which you can use your device as a flashlight.</p>
-                <a href="https://play.google.com/store/apps/details?id=fi.suomaafrontieroy.aflashlight" target="_blank"
-                  class="btn btn-outline-success btn-block">Get it on Google Play</a>
+                <h5 class="card-title card-title-align-center txt-app-title">AFlashlight</h5>
+                <p class="card-text">AFlashlight is an application with which you can use your device as a flashlight</p>
+                <div class="d-grid gap-2">
+                  <a href="https://play.google.com/store/apps/details?id=fi.suomaafrontieroy.aflashlight"
+                    target="_blank" class="btn btn-outline-success">Get it on Google Play</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
+
+          <div class="col">
+            <div class="card shadow-sm">
               <img class="img-thumb" src="images/AppIcons/ATimerIconSquare.png" alt="Icon for the ATimer app">
               <div class="card-body">
-                <h5 class="card-title card-title-align-center txt-about">ATimer</h5>
-                <p class="card-text">ATimer is a simple and useful timer application for Android.</p>
-                <a href="https://play.google.com/store/apps/details?id=fi.suomaafrontieroy.atimer" target="_blank"
-                  class="btn btn-outline-success btn-block">Get it on Google Play</a>
+                <h5 class="card-title card-title-align-center txt-app-title">ATimer</h5>
+                <p class="card-text">ATimer is a simple and useful timer application for Android</p>
+                <div class="d-grid gap-2">
+                  <a href="https://play.google.com/store/apps/details?id=fi.suomaafrontieroy.atimer" target="_blank"
+                    class="btn btn-outline-success">Get it on Google Play</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
+          <div class="col">
+            <div class="card shadow-sm">
               <img class="img-thumb" src="images/AppIcons/AToDoListIconSquare.png" alt="Icon for AToDoList app">
               <div class="card-body">
-                <h5 class="card-title card-title-align-center txt-about">AToDoList</h5>
-                <p class="card-text">AToDoList is a simple to-do list or task list application for Android.</p>
-                <a href="https://play.google.com/store/apps/details?id=fi.suomaafrontier.atodolist" target="_blank"
-                  class="btn btn-outline-success btn-block">Get it on Google Play</a>
+                <h5 class="card-title card-title-align-center txt-app-title">AToDoList</h5>
+                <p class="card-text">AToDoList is a simple to-do list or task list application for Android</p>
+                <div class="d-grid gap-2">
+                  <a href="https://play.google.com/store/apps/details?id=fi.suomaafrontier.atodolist" target="_blank"
+                    class="btn btn-outline-success">Get it on Google Play</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img class="img-thumb" src="images/AppIcons/FortuneBallIconSquare.png" alt="Icon for the Fortune Ball app">
-              <div class="card-body">
-                <h5 class="card-title card-title-align-center txt-about">Fortune Ball</h5>
-                <p class="card-text">Fortune Ball is an app for fortune-telling or seeking advice.</p>
-                <a href="https://play.google.com/store/apps/details?id=fi.suomaafrontieroy.fortuneball" target="_blank"
-                  class="btn btn-outline-success btn-block">Get it on Google Play</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img class="img-thumb" src="images/AppIcons/InstalledAppsInfoSquare.png" alt="Icon for the Installed Apps Info application">
-              <div class="card-body">
-                <h5 class="card-title card-title-align-center txt-about">InstalledAppsInfo</h5>
-                <p class="card-text">Displaying all application packages installed on the device.</p>
-                <a href="distribs/InstalledAppsInfo-v2.0.0.zip" class="btn btn-outline-primary btn-block">Download app</a>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="img-thumb" src="images/AppIcons/FortuneBallIconSquare.png"
+                alt="Icon for the Fortune Ball app">
+              <div class="card-body">
+                <h5 class="card-title card-title-align-center txt-app-title">Fortune Ball</h5>
+                <p class="card-text">Fortune Ball is an app for fortune-telling or seeking advice</p>
+                <div class="d-grid gap-2">
+                  <a href="https://play.google.com/store/apps/details?id=fi.suomaafrontieroy.fortuneball"
+                    target="_blank" class="btn btn-outline-success">Get it on Google Play</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="img-thumb" src="images/AppIcons/InstalledAppsInfoSquare.png"
+                alt="Icon for the Installed Apps Info application">
+              <div class="card-body">
+                <h5 class="card-title card-title-align-center txt-app-title">InstalledAppsInfo</h5>
+                <p class="card-text">Displaying all application packages installed on the device</p>
+                <div class="d-grid gap-2">
+                  <a href="distribs/InstalledAppsInfo-v2.0.0.zip" class="btn btn-outline-primary">Download
+                    app</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
               <img class="img-thumb" src="images/AppIcons/CounterIconSquare.png" alt="Icon for the Counter app">
               <div class="card-body">
-                <h5 class="card-title card-title-align-center txt-about">Counter</h5>
-                <p class="card-text">The simple counter application for Android.</p>
-                <a href="https://play.google.com/store/apps/details?id=fi.suomaafrontieroy.counter" target="_blank"
-                  class="btn btn-outline-success btn-block">Get it on Google Play</a>
+                <h5 class="card-title card-title-align-center txt-app-title">Counter</h5>
+                <p class="card-text">The simple counter application for Android</p>
+                <div class="d-grid gap-2">
+                  <a href="https://play.google.com/store/apps/details?id=fi.suomaafrontieroy.counter" target="_blank"
+                    class="btn btn-outline-success">Get it on Google Play</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
+
+          <div class="col">
+            <div class="card shadow-sm">
               <img class="img-thumb" src="images/AppIcons/EnterpriseIconSquare.png" alt="Icon for the Enterprise app">
               <div class="card-body">
-                <h5 class="card-title card-title-align-center txt-about">Enterprise App</h5>
-                <p class="card-text">For the last few years, I have been working on enterprise applications.</p>
-                <a href="" class="btn btn-outline-info btn-block">Non-disclosure agreement</a>
+                <h5 class="card-title card-title-align-center txt-app-title">Enterprise App</h5>
+                <p class="card-text">For the last few years, I have been working on enterprise applications</p>
+                <div class="d-grid gap-2">
+                  <a href="" class="btn btn-outline-secondary">Non-disclosure agreement</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
 
   </main>
 
-  <footer class="text-muted">
+  <footer class="text-muted py-5">
     <div class="container">
-      <p class="float-right">
+      <p class="float-end mb-1">
         <a href="#">Back to top</a>
       </p>
-      <p class="text-muted">Personal Portfolio Webpage created with &#10084; by &copy;&nbsp;<a
-          href="https://www.github.com/Lasicaine" target="_blank">Alex Antomonov</a>.</p>
+      <p class="text-muted">Personal Portfolio Webpage created with &#10084; by &copy;&nbsp;<a href="https://www.github.com/Lasicaine" target="_blank">Alex Antomonov</a></p>
     </div>
   </footer>
 
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script>window.jQuery || document.write('<script src="scripts/jquery-3.5.1.slim.min.js"><\/script>')</script>
-  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

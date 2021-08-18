@@ -1,24 +1,30 @@
-        @import 'https://fonts.googleapis.com/css?family=Ubuntu';
-        body {
-            font-family: 'Ubuntu', sans-serif;
-        }
-        .bg-dark { 
-            background: #4B0082!important; 
-        }
-        .img-icon {
-            margin-right: 12px;
-        }
-        .txt-header {
-            color: #CBBDE2; 
-        }
-        .txt-about {
-            color: #4B0082;
-        }
-        .img-thumb {
-            align-self: center;
-            padding-top: 16px;
-            width:55%;
-        }
-        .card-title-align-center {
-            text-align: center
-        }
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.bg-dark {
+    background: #4B0082!important;
+}
+
+.img-icon {
+    margin-right: 12px;
+}
+
+.txt-header {
+    color: #CBBDE2;
+}
+
+.txt-app-title {
+    color: #4B0082;
+}
+
+.img-thumb {
+    align-self: center;
+    padding-top: 16px;
+    width: 55%;
+}
+
+.card-title-align-center {
+    text-align: center
+}
